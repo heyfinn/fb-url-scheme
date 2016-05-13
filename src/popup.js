@@ -25,7 +25,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.isFbProfile) {
       result = fbUrl + 'profile/' + result;
     } else if (message.isFbPage) {
-      result = fbUrl + 'page/' + result;
+      result = fbUrl + 'profile/' + result;
     }
     showResult(result);
     document.execCommand('selectAll');
